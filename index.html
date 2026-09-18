@@ -26,17 +26,37 @@
         <div class="nav-logo">
           <img src="./images/image 4.webp" class="h-100 w-100 object-fit-cover" alt="">
         </div>
-        <button
+        <a href="#admissionForm"
           class="d-none d-md-flex btn btn-cta bg-primary align-items-center text-white font-plus-jakarta fw-bold"><img
             src="./images/Icon.svg" alt="">Get Free
-          Counselling</button>
+          Counselling</a>
       </div>
     </div>
   </nav>
+  <a href="tel:9711849719" class="sticky-call-btn d-md-flex d-none" aria-label="Call Us">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+  <!-- Mobile Bottom Sticky CTA Container -->
+  <div class="mobile-sticky-bar d-flex d-md-none position-fixed bottom-0 start-0 w-100 bg-white p-2 border-top z-3">
+
+    <!-- Call Button -->
+    <a href="tel:9711849719"
+      class="btn btn-outline-primary w-50 d-flex align-items-center justify-content-center gap-2 font-plus-jakarta fw-bold py-2 me-1">
+      <i class="bi bi-telephone-fill"></i> Call Us
+    </a>
+
+    <!-- Enquiry Button -->
+    <a href="#admissionForm"
+      class="w-50 btn btn-cta btn-mobile-cta bg-primary align-items-center text-white font-plus-jakarta fw-bold d-flex justify-content-center gap-2 ">
+      <img src="./images/Icon.svg" alt="" style="width: 18px; height: 18px;">
+      Get Free Counselling
+    </a>
+
+  </div>
   <div class="position-relative">
     <div class="container-fluid hero-sec-img d-flex flex-wrap align-items-center position-relative">
-      <div class="container">
-        <div class="row align-items-center gap-md-48 gap-34">
+      <div class="container container-60px container-py-80">
+        <div class="row align-items-center gap-md-48 gap-34 mb-4">
           <div class="col-md-6 col-12">
             <div class="hero-content d-flex flex-column gap-3 gap-md-4">
               <div
@@ -52,15 +72,104 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 col-12"></div>
+          <div class="col-md-5 col-12 ">
+            <div class="admission-card" id="#admissionForm">
+              <div class="admission-header">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <span
+                      class="badge-admissions d-flex align-items-center gap-2 rounded-pill text-primary fw-semibold font-plus-jakarta w-fit-content">
+                      <img src="./images/Icon-2.svg" alt="Icon" height="12px" width="12px" /> ADMISSIONS OPEN 2026
+                    </span>
+                  </div>
+                  <div class="text-end d-flex flex-column gap-1">
+                    <div class="fee-assistance-title text-quaternary text-uppercase fw-bold font-plus-jakarta">FEE
+                      ASSISTANCE</div>
+                    <div class="no-cost-emi text-uppercase fw-bold font-plus-jakarta fee-assistance-title">No-Cost EMI
+                    </div>
+                  </div>
+                </div>
+                <h4 class="form-main-title font-playfair ls--1 text-tertiary">Admission Form</h4>
+              </div>
+              <form id="admissionForm" class="d-flex flex-column gap-2 pt-2 pt-md-3">
+                <div>
+                  <label for="fullName"
+                    class="form-label font-plus-jakarta  text-eligibility-desc fw-semibold text-admission ">Full
+                    Name<span class="text-danger">*</span></label>
+                  <input type="text" name="Name" class="form-control py-2 font-plus-jakarta" id="fullName"
+                    placeholder="Enter Your Full Name" required minlength="2" pattern="[A-Za-z\s]+"
+                    title="Please enter a valid name (letters only).">
+                </div>
+                <div>
+                  <label for="emailId"
+                    class="form-label font-plus-jakarta  text-eligibility-desc fw-semibold text-admission ">Email
+                    ID<span class="text-danger">*</span></label>
+                  <input type="email" name="Email" class="form-control py-2 font-plus-jakarta" id="emailId"
+                    placeholder="Enter Your Email Id" required>
+                </div>
+                <div>
+                  <label for="mobileNumber"
+                    class="form-label font-plus-jakarta  text-eligibility-desc fw-semibold text-admission ">Mobile
+                    Number<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <span
+                      class="input-group-text  font-plus-jakarta  text-eligibility-descbg-lsemiight text-admission  fw-medium">
+                      <img src="https://flagcdn.com/w20/in.png" alt="India Flag" class="me-1" style="width: 18px;">
+                      +91
+                    </span>
+                    <input type="tel" name="Phone" class="form-control py-2 font-plus-jakarta" id="mobileNumber"
+                      placeholder="Enter 10-Digit Number" required pattern="[0-9]{10}" maxlength="10"
+                      title="Please enter a valid 10-digit mobile number.">
+                  </div>
+                </div>
+                <div>
+                  <label for="workExp"
+                    class="form-label font-plus-jakarta  text-eligibility-desc fw-semibold text-admission">Work Exp<span
+                      class="text-danger">*</span></label>
+                  <select name="Experience" class="form-select py-2 font-plus-jakarta" id="workExp" required>
+                    <option value="" selected disabled>Select Work Experience</option>
+                    <option value="0">Fresher</option>
+                    <option value="1">Less than 1 Year</option>
+                    <option value="1-3">1 - 3 years</option>
+                    <option value="3-5">3 - 5 years</option>
+                    <option value="5+">5 - 10 years</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="program"
+                    class="form-label font-plus-jakarta  text-eligibility-desc fw-semibold text-admission ">Program of
+                    Interest<span class="text-danger">*</span></label>
+                  <select name="Program" class="form-select py-2 font-plus-jakarta" id="program" required>
+                    <option value="" selected disabled hidden>Select a Program</option>
+                    <option value="mba">ONLINE MBA — Dual Specialisation</option>
+                    <option value="bba">ONLINE BBA</option>
+                    <option value="bcom">ONLINE B.COM (Bachelor of Commerce)</option>
+                    <option value="ma">ONLINE MA IN ENGLISH</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="cityId"
+                    class="form-label font-plus-jakarta  text-eligibility-desc fw-semibold text-admission ">City <span
+                      class="text-danger">*</span></label>
+                  <input type="text" name="City" class="form-control py-2 font-plus-jakarta" id="cityId"
+                    placeholder="Enter Your City" required minlength="2">
+                </div>
+                <input type="hidden" name="PageURL" id="pageURL">
+                <button type="submit" id="submitBtn"
+                  class="btn  btn btn-cta bg-primary align-items-center text-white font-plus-jakarta fw-bold">
+                  Submit Admission Enquiry <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="container accreditation-wrapper bg-white position-relative">
       <div class="accreditation-card ">
-        <div class="row text-center g-0">
+        <div class="row text-center g-3 g-md-4">
           <div
-            class="col-lg-3 col-md-6 col-12 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
+            class="col-lg-3 col-6 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
             <div
               class="badge-icon badge-orange d-flex align-items-center justify-content-center text-primary flex-shrink-0">
               <i class="bi bi-check2-circle text-primary"></i>
@@ -73,7 +182,7 @@
             </div>
           </div>
           <div
-            class="col-lg-3 col-md-6 col-12 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
+            class="col-lg-3 col-6 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
             <div
               class="badge-icon badge-orange d-flex align-items-center justify-content-center text-primary flex-shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -93,7 +202,7 @@
             </div>
           </div>
           <div
-            class="col-lg-3 col-md-6 col-12 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
+            class="col-lg-3 col-6 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
             <div
               class="badge-icon badge-orange d-flex align-items-center justify-content-center text-primary flex-shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -124,7 +233,7 @@
             </div>
           </div>
           <div
-            class="col-lg-3 col-md-6 col-12 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
+            class="col-lg-3 col-6 accreditation-item d-flex align-items-center justify-content-center gap-2 flex-column px-3">
             <div
               class="badge-icon badge-orange d-flex align-items-center justify-content-center text-primary flex-shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -146,11 +255,85 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-white about-section">
-    <div class="container container-py-96"></div>
+  <div class="container-fluid bg-white about-section position-relative">
+    <div class="concentric-bg">
+      <img src="./images/Container-1.webp" class="h-100 w-100 object-fir-cover" alt="">
+    </div>
+    <div class="container container-py-96 container-60px">
+      <div class="row gap-md-48 gap-34 align-items-center">
+        <div class="col-md-5 d-flex ">
+          <div class="row g-3 h-100">
+            <div class="col-6">
+              <div class="bg-sixth about-img">
+                <img src="./images/Image (Sikkim Manipal University Campus & Placements Driveway).webp"
+                  alt="University Campus Building" class="about-img-box h-100 w-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="bg-sixth about-img top-bottom "><img
+                  src="./images/Image (Sikkim Manipal University Campus Life and Learning).webp"
+                  alt="Students studying together" class="about-img-box h-100 w-100 object-fit-cover"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="h-100 d-flex flex-column gap-3 gap-md-4">
+            <h2 class="about-title text-tertiary font-playfair fw-medium ls--1 ">ABOUT MANIPAL UNIVERSITY (MU)</h2>
+            <p class="about-text text-quinary font-plus-jakarta ">
+              Established in 1995, Manipal University (SMU) is a NAAC A+ accredited institution and part of the
+              respected Manipal Education & Medical Group, founded by Padma Shri Dr. T.M.A. Pai. SMU's distance
+              education arm, founded in 2001, has educated over 500,000 students, making it one of India's leading
+              providers of professional online programmes.
+            </p>
+            <div
+              class="quote-card d-flex gap-2 gap-md-3 align-items-start justify-content-center justify-content-md-start">
+              <div class="quote-icon flex-shrink-0">
+                <img src="./images/Icon-1.svg" height="24px" width="24px" alt="">
+              </div>
+              <div class="quote-body d-flex flex-column gap-2">
+                <p class="text-quinary font-plus-jakarta fst-italic quote-text">"Give an individual a professional
+                  education and
+                  you have given him a lifestyle."</p>
+                <div class="quote-author text-six font-segeoe-ui fw-bold">— Padma Shri Dr. T.M.A. Pai, Founder, Manipal
+                  Group
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 mb-md-4">
+              <a href="#admissionForm"
+                class="d-flex btn btn-cta bg-seventh align-items-center gap-2 text-white font-plus-jakarta fw-bold w-fit-content rounded-pill">
+                Apply now <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="row g-3 max-w-lg state-grid pt-3 pt-md-4">
+              <div class="col-4">
+                <div class="stat-card d-flex align-items-center justify-content-center flex-column ">
+                  <div class="stat-card-title fw-bold font-plus-jakarta text-center">1995</div>
+                  <div class="stat-card-subtitle text-quaternary text-center font-plus-jakarta ">Established
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-card d-flex align-items-center justify-content-center flex-column ">
+                  <div class="stat-card-title fw-bold font-plus-jakarta text-center text-primary ">NAAC A+</div>
+                  <div class="stat-card-subtitle text-quaternary text-center font-plus-jakarta ">Accreditation
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-card d-flex align-items-center justify-content-center flex-column ">
+                  <div class="stat-card-title fw-bold font-plus-jakarta text-center">500,000+</div>
+                  <div class="stat-card-subtitle text-quaternary text-center font-plus-jakarta ">Educated</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="container-fluid programme-container">
-    <div class="container container-py-96 d-flex flex-column gap-md-48 gap-34">
+    <div class="container container-py-96 container-60px d-flex flex-column gap-md-48 gap-34">
       <div class="row align-items-end g-3 g-md-4">
         <div class="col-lg-7 ">
           <div class="d-flex flex-column gap-2 gap-md-3 programme-head">
@@ -184,10 +367,11 @@
           </div>
         </div>
       </div>
-      <div class="row g-3 g-md-4" id="programmeGrid">
+      <div class="row g-3 g-md-4 align-items-stretch" id="programmeGrid">
         <div class="col-12 col-lg-6 card-wrapper" data-category="pg">
-          <div class="program-card overflow-hidden">
-            <div class="card-banner position-relative d-flex flex-column justify-content-between">
+          <div class="program-card overflow-hidden h-100 w-100">
+            <div class="card-banner position-relative d-flex flex-column justify-content-between"
+              style="--card-bg-img: url('../images/Image (Online MBA Dual Specialisation Strategy and Leadership).webp');">
               <div class="banner-content d-flex justify-content-between align-items-center">
                 <span class="degree-pill rounded-pill text-white fw-bold font-plus-jakarta">Postgraduate Degree</span>
                 <span
@@ -202,7 +386,7 @@
             <div class="card-body-content d-flex flex-column gap-3 gap-md-4">
               <div class="info-grid-box">
                 <div class="row g-3">
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (2).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Duration
@@ -210,14 +394,14 @@
                     <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">2 Years (4 Semesters), 15–20
                       hrs/week</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (3).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Mode
                     </div>
                     <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">100% Online</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (4).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Total
@@ -250,9 +434,9 @@
                 </div>
               </div>
               <div class="btn-apply-program pt-3 pt-md-4 mt-3 border-top-light ">
-                <button
-                  class="d-none d-md-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
-                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="#admissionForm"
+                  class="d-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
+                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -260,9 +444,9 @@
 
         <!-- Card 2: Online BBA (UG) -->
         <div class="col-12 col-lg-6 card-wrapper" data-category="ug">
-          <div class="program-card overflow-hidden">
+          <div class="program-card overflow-hidden h-100 w-100">
             <div class="card-banner position-relative d-flex flex-column justify-content-between"
-              style="background-image: url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1000&auto=format&fit=crop');">
+              style="--card-bg-img: url('../images/Container-2.webp');">
               <div class="banner-content d-flex justify-content-between align-items-center">
                 <span class="degree-pill rounded-pill text-white fw-bold font-plus-jakarta">Undergraduate Degree</span>
                 <span
@@ -276,22 +460,22 @@
             <div class="card-body-content d-flex flex-column gap-3 gap-md-4">
               <div class="info-grid-box">
                 <div class="row g-3">
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (2).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Duration
                     </div>
-                    <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">2 Years (4 Semesters), 15–20
-                      hrs/week</div>
+                    <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">Minimum 3 Years (6 Semesters),
+                      15–20 hrs/week</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (3).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Mode
                     </div>
                     <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">100% Online</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (4).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Total
@@ -303,30 +487,45 @@
               </div>
               <div class="info-grid-box d-flex flex-column gap-2">
                 <div class="eligibility-title fw-bold font-plus-jakarta text-tertiary">Eligibility:</div>
-                <p class="eligibility-desc text-eligibility-desc font-plus-jakarta">10+2+3/10+2+4/10+3+3-year Bachelor's
-                  degree in any
-                  discipline, min. 50%
-                  aggregate (45% for reserved categories)</p>
+                <p class="eligibility-desc text-eligibility-desc font-plus-jakarta">10+2 or 10+3 diploma from a
+                  recognised board/institute, any discipline</p>
               </div>
               <div class="d-flex flex-column gap-2">
                 <div class="spec-section-label fw-bold font-plus-jakarta text-tertiary d-flex gap-2 align-items-center">
-                  <img src="./images/Icon (5).svg" height="14px" width="14px" class="flex-shrink-0" alt=""> Choose Dual
-                  Specialisations from:
+                  <img src="./images/Icon (5).svg" height="14px" width="14px" class="flex-shrink-0" alt=""> 4
+                  Specialisation Tracks (choose in Semester 5, continues in Semester 6):
                 </div>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Marketing</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Finance</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">HR</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Systems</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Operations & Supply Chain
-                    Management</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Healthcare</span>
+                <div class="row g-2">
+                  <div class="col-12 col-md-6">
+                    <div class="bba-card fw-medium d-flex align-items-center font-plus-jakarta">
+                      <div class="bba-icon bg-primary rounded-circle"></div>
+                      <span>Business Analytics & Fintech</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="bba-card fw-medium d-flex align-items-center font-plus-jakarta">
+                      <div class="bba-icon bg-primary rounded-circle"></div>
+                      <span>Entrepreneurship</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="bba-card fw-medium d-flex align-items-center font-plus-jakarta">
+                      <div class="bba-icon bg-primary rounded-circle"></div>
+                      <span>Operations & Supply Chain Management</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="bba-card fw-medium d-flex align-items-center font-plus-jakarta">
+                      <div class="bba-icon bg-primary rounded-circle"></div>
+                      <span>Banking & Insurance</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="btn-apply-program pt-3 pt-md-4 mt-3 border-top-light ">
-                <button
-                  class="d-none d-md-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
-                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></button>
+              <div class="btn-apply-program pt-3 mt-2 border-top-light ">
+                <a href="#admissionForm"
+                  class="d-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
+                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -334,9 +533,9 @@
 
         <!-- Card 3: Online B.Com (UG) -->
         <div class="col-12 col-lg-6 card-wrapper" data-category="ug">
-          <div class="program-card overflow-hidden">
+          <div class="program-card overflow-hidden h-100 w-100">
             <div class="card-banner position-relative d-flex flex-column justify-content-between"
-              style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop');">
+              style="--card-bg-img: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop');">
               <div class="banner-content d-flex justify-content-between align-items-center">
                 <span class="degree-pill rounded-pill text-white fw-bold font-plus-jakarta">Undergraduate Degree</span>
                 <span
@@ -351,22 +550,22 @@
             <div class="card-body-content d-flex flex-column gap-3 gap-md-4">
               <div class="info-grid-box">
                 <div class="row g-3">
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (2).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Duration
                     </div>
-                    <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">2 Years (4 Semesters), 15–20
-                      hrs/week</div>
+                    <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">Minimum 3 Years (6 Semesters),
+                      15–20 hrs/week</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (3).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Mode
                     </div>
                     <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">100% Online</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (4).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Total
@@ -378,30 +577,13 @@
               </div>
               <div class="info-grid-box d-flex flex-column gap-2">
                 <div class="eligibility-title fw-bold font-plus-jakarta text-tertiary">Eligibility:</div>
-                <p class="eligibility-desc text-eligibility-desc font-plus-jakarta">10+2+3/10+2+4/10+3+3-year Bachelor's
-                  degree in any
-                  discipline, min. 50%
-                  aggregate (45% for reserved categories)</p>
-              </div>
-              <div class="d-flex flex-column gap-2">
-                <div class="spec-section-label fw-bold font-plus-jakarta text-tertiary d-flex gap-2 align-items-center">
-                  <img src="./images/Icon (5).svg" height="14px" width="14px" class="flex-shrink-0" alt=""> Choose Dual
-                  Specialisations from:
-                </div>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Marketing</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Finance</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">HR</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Systems</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Operations & Supply Chain
-                    Management</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Healthcare</span>
-                </div>
+                <p class="eligibility-desc text-eligibility-desc font-plus-jakarta">10+2/Intermediate/Senior Secondary
+                  from a recognised board, any discipline</p>
               </div>
               <div class="btn-apply-program pt-3 pt-md-4 mt-3 border-top-light ">
-                <button
-                  class="d-none d-md-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
-                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="#admissionForm"
+                  class="d-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
+                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -409,9 +591,9 @@
 
         <!-- Card 4: Online MA in English (PG) -->
         <div class="col-12 col-lg-6 card-wrapper" data-category="pg">
-          <div class="program-card overflow-hidden">
+          <div class="program-card overflow-hidden h-100 w-100">
             <div class="card-banner position-relative d-flex flex-column justify-content-between"
-              style="background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1000&auto=format&fit=crop');">
+              style="--card-bg-img: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1000&auto=format&fit=crop');">
               <div class="banner-content d-flex justify-content-between align-items-center">
                 <span class="degree-pill rounded-pill text-white fw-bold font-plus-jakarta">Postgraduate Degree</span>
                 <span
@@ -425,22 +607,22 @@
             <div class="card-body-content d-flex flex-column gap-3 gap-md-4">
               <div class="info-grid-box">
                 <div class="row g-3">
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (2).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Duration
                     </div>
-                    <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">2 Years (4 Semesters), 15–20
-                      hrs/week</div>
+                    <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">Minimum 2 Years (4 Semesters),
+                      15–20 hrs/week</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (3).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Mode
                     </div>
                     <div class="info-item-val fw-bold font-plus-jakarta text-tertiary">100% Online</div>
                   </div>
-                  <div class="col-4 d-flex flex-column gap-2">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-2">
                     <div
                       class="info-item-title d-flex gap-1 align-items-center fw-medium font-plus-jakarta text-quaternary">
                       <img src="./images/Icon (4).svg" height="12px" width="12px" class="flex-shrink-0" alt=""> Total
@@ -452,30 +634,13 @@
               </div>
               <div class="info-grid-box d-flex flex-column gap-2">
                 <div class="eligibility-title fw-bold font-plus-jakarta text-tertiary">Eligibility:</div>
-                <p class="eligibility-desc text-eligibility-desc font-plus-jakarta">10+2+3/10+2+4/10+3+3-year Bachelor's
-                  degree in any
-                  discipline, min. 50%
-                  aggregate (45% for reserved categories)</p>
-              </div>
-              <div class="d-flex flex-column gap-2">
-                <div class="spec-section-label fw-bold font-plus-jakarta text-tertiary d-flex gap-2 align-items-center">
-                  <img src="./images/Icon (5).svg" height="14px" width="14px" class="flex-shrink-0" alt=""> Choose Dual
-                  Specialisations from:
-                </div>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Marketing</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Finance</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">HR</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Systems</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Operations & Supply Chain
-                    Management</span>
-                  <span class="spec-pill text-primary fw-semibold font-plus-jakarta">Healthcare</span>
-                </div>
+                <p class="eligibility-desc text-eligibility-desc font-plus-jakarta">10+2+3-year Bachelor's degree from a
+                  recognised university, any discipline</p>
               </div>
               <div class="btn-apply-program pt-3 pt-md-4 mt-3 border-top-light ">
-                <button
-                  class="d-none d-md-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
-                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="#admissionForm"
+                  class="d-flex btn btn-cta bg-primary align-items-center justify-content-center text-white font-plus-jakarta fw-bold w-100">
+                  Apply Now / Free Counselling <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -484,7 +649,7 @@
     </div>
   </div>
   <div class="container-fluid admission-bg ">
-    <div class="container container-py-96 ">
+    <div class="container container-py-96 container-60px">
       <div class="row gap-md-48 gap-34">
         <div class="col-12">
           <div class="admission-head-wrapper  pb-3 pb-md-4">
@@ -500,7 +665,7 @@
 
             <div class="row g-4 justify-content-center">
               <!-- Step 1 -->
-              <div class="col-12 col-sm-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
                 <div
                   class="step-number bg-white position-relative rounded-circle d-flex align-items-center justify-content-center fw-bold font-plus-jakarta text-six">
                   1</div>
@@ -513,7 +678,7 @@
               </div>
 
               <!-- Step 2 -->
-              <div class="col-12 col-sm-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
                 <div
                   class="step-number bg-white position-relative rounded-circle d-flex align-items-center justify-content-center fw-bold font-plus-jakarta text-six">
                   2</div>
@@ -526,7 +691,7 @@
               </div>
 
               <!-- Step 3 -->
-              <div class="col-12 col-sm-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
                 <div
                   class="step-number bg-white position-relative rounded-circle d-flex align-items-center justify-content-center fw-bold font-plus-jakarta text-six">
                   3</div>
@@ -538,7 +703,7 @@
               </div>
 
               <!-- Step 4 -->
-              <div class="col-12 col-sm-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-lg-3 ">
                 <div
                   class="step-number bg-white position-relative rounded-circle d-flex align-items-center justify-content-center fw-bold font-plus-jakarta text-six">
                   4</div>
@@ -550,7 +715,7 @@
               </div>
             </div>
           </div>
-          <div class="admission-note d-flex mx-auto text-white  font-plus-jakarta text-center text-md-start">
+          <div class="admission-note d-flex mx-auto text-white font-plus-jakarta text-start align-items-start">
             <img src="./images/Container.svg" alt=""><span>
               <strong class="text-white fw-bold">Application fee note:</strong> <span
                 class="text-white text-opacity-75"> A non-refundable ₹500 application fee applies
@@ -561,15 +726,15 @@
           </div>
         </div>
         <div class="col-12 justify-content-center d-flex flex-column flex-md-row align-items-center">
-          <button
+          <a href="#admissionForm"
             class="btn btn-apply bg-white text-six rounded-pill font-plus-jakarta fw-semibold d-flex align-items-center gap-2">
-            Apply Now<i class="bi bi-arrow-right-short"></i></button>
+            Apply Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
       </div>
     </div>
   </div>
   <div class="container-fluid">
-    <div class="container container-py-80 faq-container">
+    <div class="container container-py-80 container-60px faq-container">
       <div class="row">
         <div class="max-w-900 mx-auto d-flex flex-column gap-md-56 gap-40">
           <div class="text-center d-flex flex-column align-items-center justify-content-center gap-2">
@@ -614,7 +779,8 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#faqAccordion">
                 <div class="accordion-body font-plus-jakarta text-quinary">
-                  No, all classes and examinations are conducted completely online.
+                  No — both classes and semester-end examinations are conducted fully online (computer-based,
+                  proctored), so you can study and appear for exams from home.
                 </div>
               </div>
             </div>
@@ -625,13 +791,15 @@
                 <button class="accordion-button collapsed text-tertiary font-playfair-display fw-medium" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                   aria-controls="collapseThree">
-                  Do I need to attend classes or exams on campus?
+                  What is the difference between SMU, Manipal University Jaipur (MUJ), and MAHE?
                 </button>
               </h3>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#faqAccordion">
                 <div class="accordion-body font-plus-jakarta text-quinary">
-                  No, all classes and examinations are conducted completely online.
+                  All three are part of the Manipal Group's online education network (Online Manipal), but each has its
+                  own fee structure, specialisations, and accreditation profile. Our counsellors can help you compare
+                  and choose the right fit.
                 </div>
               </div>
             </div>
@@ -642,13 +810,47 @@
                 <button class="accordion-button collapsed text-tertiary font-playfair-display fw-medium" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                   aria-controls="collapseFour">
-                  Do I need to attend classes or exams on campus?
+                  Is EMI or scholarship support available?
                 </button>
               </h3>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#faqAccordion">
                 <div class="accordion-body font-plus-jakarta text-quinary">
-                  No, all classes and examinations are conducted completely online.
+                  Yes — No-Cost EMI is available on annual fee payment, and the Manipal Scholarship Scheme offers fee
+                  concessions of up to 30% for defence personnel, differently-abled candidates, SMU alumni, and learners
+                  from Sikkim/North-East India.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3 rounded-4 overflow-hidden border">
+              <h3 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed text-tertiary font-playfair-display fw-medium" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  Can I access additional certifications during my programme?
+                </button>
+              </h3>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body font-plus-jakarta text-quinary">
+                  Yes — SMU learners get access to Coursera course certifications alongside their degree.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 rounded-4 overflow-hidden border">
+              <h3 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed text-tertiary font-playfair-display fw-medium" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                  aria-controls="collapseSix">
+                  What happens if I fail a paper?
+                </button>
+              </h3>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body font-plus-jakarta text-quinary">
+                  You can reappear for the relevant paper through a resitting application (with applicable fees) within
+                  the due date.
                 </div>
               </div>
             </div>
@@ -657,7 +859,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid cta-container container-py-96">
+  <div class="container-fluid cta-container container-py-96 container-60px">
     <div class="container">
       <div class="row d-flex flex-wrap align-items-center gap-md-48 gap-34">
         <div class="col-md-6">
@@ -674,13 +876,15 @@
         </div>
         <div class="col-md-5">
           <div class="d-flex flex-column flex-md-row justify-content-end gap-3">
-            <button
+            <a href="#admissionForm"
               class="btn btn-cta bg-primary d-flex align-items-center justify-content-center gap-2 text-white font-plus-jakarta fw-bold rounded-pill"><img
                 src="./images/Icon.svg" alt="">Get Free
-              Counselling<i class="bi bi-arrow-right-short" width="24px" height="24px"></i></button>
-            <button
-              class="btn btn-secondary d-flex align-items-center justify-content-center gap-2 text-white font-plus-jakarta fw-bold rounded-pill"><img
-                src="./images/Icon.svg" alt="">WhatsApp Us Now</button>
+              Counselling<i class="bi bi-arrow-right-short" width="24px" height="24px"></i></a>
+            <a href="https://wa.me/919711849719" target="_blank"
+              class="btn btn-secondary d-flex align-items-center justify-content-center gap-2 text-white font-plus-jakarta fw-bold rounded-pill text-decoration-none">
+              <img src="./images/whatsapp.svg" alt="WhatsApp">
+              WhatsApp Us Now
+            </a>
           </div>
         </div>
       </div>
@@ -691,7 +895,10 @@
       <div class="container footer-container d-flex flex-column">
         <div class="row">
           <div class="col-lg-8">
-            <p class="text-fourteenth font-plus-jakarta footer-para pt-3 pt-md-4">Manipal University (MU) is a premier
+            <div class="nav-logo bg-white">
+              <img src="./images/image 4.webp" class="h-100 w-100 object-fit-cover" alt="">
+            </div>
+            <p class="text-fourteenth font-plus-jakarta footer-para pt-4">Manipal University (MU) is a premier
               higher
               education
               institution established in
@@ -701,11 +908,13 @@
         </div>
         <div class="row copyright-container pt-3 pt-md-4">
           <div class="col-md-6">
-            <div class="text-fourteenth font-plus-jakarta footer-text ">© 2025 Manipal University. All
+            <div class="text-fourteenth font-plus-jakarta footer-text  text-center text-md-start">© 2025 Manipal
+              University. All
               Rights Reserved.</div>
           </div>
           <div class="col-md-6">
-            <div class="text-fourteenth font-plus-jakarta footer-text text-md-end">Design and Developed by Mediagarh
+            <div class="text-fourteenth font-plus-jakarta footer-text text-md-end text-center">Design and Developed by
+              Mediagarh
             </div>
           </div>
         </div>
@@ -715,7 +924,46 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwFDCvVfGM3nsX2ILmu5W7EENHl3RN-iQJ7ebflwJEvuhfO-tgIIN6NrJlJBFoZvk09uA/exec';
+    const form = document.getElementById('admissionForm');
+    const submitBtn = document.getElementById('submitBtn');
 
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Current Page URL set karein
+      document.getElementById('pageURL').value = window.location.href;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Submitting...';
+
+      const formData = new FormData(form);
+
+      // Form submit request
+      fetch(scriptURL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      })
+        .then(() => {
+          // Data successfully send hone ke baad redirect
+          window.location.href = 'thank-you.html';
+        })
+        .catch(error => {
+          console.error('Submission error:', error);
+          alert('Error submitting form. Please try again.');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Submit Admission Enquiry <i class="fa-solid fa-arrow-right"></i>';
+        });
+    });
+  </script>
 </body>
 
 </html>
