@@ -873,4 +873,36 @@ footer,
     --bs-btn-disabled-border-color: #e65c00;
     --bs-gradient: none;
   }
+
+  .filter-pills-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+  }
+
+  /* Scrollbar hide in Chrome/Safari */
+  .filter-pills-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Button size & text fix */
+  .filter-btn {
+    flex-shrink: 0;
+    /* Button ko shrink nahi hone dega */
+    white-space: nowrap;
+    /* Text break nahi hoga */
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+  }
+
+  .filter-btn.active {
+    background-color: #000;
+    color: #fff;
+  }
 }

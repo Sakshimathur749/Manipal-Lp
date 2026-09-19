@@ -1042,10 +1042,8 @@
 
 /* ── Header row: heading left, arrows right ── */
 .rankings-header {
-  display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 16px;
 }
 
 .rankings-header-left {
