@@ -6,10 +6,10 @@
 }
 
 /* ── Max-width container ── */
-.why-study-container {
+/* .why-study-container {
   margin-inline: auto;
   padding-inline: 16px;
-}
+} */
 
 .jakarta-fonts {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -323,9 +323,6 @@
    and let why-col-center wrap portrait + stats
    ------------------------------------------------ */
 @media (max-width: 1024px) {
-  .why-study-section {
-    padding-block: 64px;
-  }
 
   .why-card-curriculum {
     padding: 32px 24px;
@@ -346,10 +343,6 @@
    column so portrait sits above the stats block
    ------------------------------------------------ */
 @media (max-width: 768px) {
-  .why-study-section {
-    padding-block: 48px;
-  }
-
   .why-heading-wrap {
     margin-bottom: 28px;
   }
@@ -422,10 +415,6 @@
    Tighten further; bottom row cards stack vertically
    ------------------------------------------------ */
 @media (max-width: 480px) {
-  .why-study-section {
-    padding-block: 40px;
-  }
-
   .why-study-heading {
     font-size: 1.5rem;
   }
@@ -483,8 +472,6 @@
 }
 
 .sch-container {
-  margin-inline: auto;
-  padding-inline: 16px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -902,10 +889,6 @@
 
 /* ── Tablet landscape ≤ 1024px ── */
 @media (max-width: 1024px) {
-  .sch-section {
-    padding-block: 64px;
-  }
-
   .sch-emi-img-wrap {
     flex: 0 0 38%;
     max-width: 38%;
@@ -926,10 +909,6 @@
   .sch-tile-badge {
     font-size: 14px;
     line-height: 1.2;
-  }
-
-  .sch-section {
-    padding-block: 48px;
   }
 
   /* EMI card: stack image on top */
@@ -997,10 +976,6 @@
 
 /* ── Mobile ≤ 480px ── */
 @media (max-width: 480px) {
-  .sch-section {
-    padding-block: 40px;
-  }
-
   .sch-heading {
     font-size: 1.6rem;
   }
@@ -1060,8 +1035,6 @@
 }
 
 .rankings-container {
-  margin-inline: auto;
-  padding-inline: 16px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1307,7 +1280,10 @@
 }
 
 @media (max-width: 768px) {
-  .rankings-section {
+
+  .rankings-section,
+  .sch-section,
+  .why-study-section {
     padding: 60px 16px;
   }
 
