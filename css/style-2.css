@@ -1,17 +1,3 @@
-/* ================================================
-   style-2.css  —  Why Study Online with MU?
-   Container: 1216px + 16px padding each side
-   Font: Playfair Display / Plus Jakarta Sans
-   Brand blue: #0066CC
-   ================================================ */
-
-/* ── Reset / base ── */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* ── Section wrapper ── */
 .why-study-section {
   background: #fafafa;
@@ -21,7 +7,6 @@
 
 /* ── Max-width container ── */
 .why-study-container {
-  max-width: 1216px;
   margin-inline: auto;
   padding-inline: 16px;
 }
@@ -45,9 +30,8 @@
 }
 
 .why-study-subtext {
-  font-size: clamp(0.875rem, 1.4vw, 1rem);
-  color: #777;
-  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* ================================================
@@ -94,7 +78,8 @@
    CARD 1 — Flexible curriculum
    ================================================ */
 .why-card-curriculum {
-  flex: 1; /* fill remaining height in left col */
+  flex: 1;
+  /* fill remaining height in left col */
   padding: 65px 32px;
 }
 
@@ -153,6 +138,7 @@
 .highlight-blue {
   color: #0066cc;
 }
+
 .highlight-orange {
   color: #f36f21;
 }
@@ -216,6 +202,7 @@
   margin: 0;
   line-height: 1;
 }
+
 /* ================================================
    COL 2 — Portrait image with mint pill bg
    ================================================ */
@@ -228,20 +215,18 @@
   min-height: 380px;
   padding: 8px 16px;
   max-width: 253px;
-  background: linear-gradient(
-    180deg,
-    #eaf5ec 0%,
-    #e8f4ea 10%,
-    #e7f4e9 20%,
-    #e5f3e7 30%,
-    #e4f3e6 40%,
-    #e2f2e4 50%,
-    #dff1e2 60%,
-    #ddefdf 70%,
-    #daeedd 80%,
-    #d8ecda 90%,
-    #d5ebd8 100%
-  );
+  background: linear-gradient(180deg,
+      #eaf5ec 0%,
+      #e8f4ea 10%,
+      #e7f4e9 20%,
+      #e5f3e7 30%,
+      #e4f3e6 40%,
+      #e2f2e4 50%,
+      #dff1e2 60%,
+      #ddefdf 70%,
+      #daeedd 80%,
+      #d8ecda 90%,
+      #d5ebd8 100%);
 }
 
 .why-portrait-img {
@@ -295,14 +280,17 @@
   line-height: 1.55;
   margin: 0 0 16px;
 }
+
 .why-col-right {
   padding: 36px;
 }
+
 .why-cta-link {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   color: #0066cc;
+  border-top: 1px solid #F5F5F5;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -495,7 +483,6 @@
 }
 
 .sch-container {
-  max-width: 1216px;
   margin-inline: auto;
   padding-inline: 16px;
   display: flex;
@@ -525,7 +512,12 @@
   border: 1px solid rgba(229, 229, 229, 0.8);
   background: #fff;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+
 }
+
 .badge-icon-box img {
   width: 14px;
   height: 14px;
@@ -603,8 +595,9 @@
   align-items: flex-start;
   gap: 14px;
 }
-.badge-icon-box {
-}
+
+.badge-icon-box {}
+
 .sch-emi-icon-wrap {
   flex-shrink: 0;
   width: 48px;
@@ -789,6 +782,7 @@
 .sch-tile:hover .sch-tile-cat {
   color: #f36f21;
 }
+
 .sch-tile-body {
   display: flex;
   flex-direction: column;
@@ -960,25 +954,32 @@
     align-items: flex-start;
     gap: 10px;
   }
+
   .sch-emi-title {
     font-size: 22px;
   }
+
   .sch-emi-badges {
     display: flex;
     flex-wrap: wrap;
   }
+
   .sch-badge {
     width: auto;
   }
+
   .sch-emi-icon-wrap {
     display: none;
   }
+
   .why-card-247 {
     padding: 20px;
   }
+
   .why-card {
     overflow: unset;
   }
+
   .why-card-text-side {
     max-width: unset;
   }
@@ -1043,13 +1044,12 @@
    ================================================ */
 
 .rankings-section {
-  background: #fff;
+  background: #FAFAFA99;
   padding-block: 80px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #E8E8E8
 }
 
 .rankings-container {
-  max-width: 1216px;
   margin-inline: auto;
   padding-inline: 16px;
   display: flex;
@@ -1144,14 +1144,14 @@
 .rank-card {
   position: relative;
   background: #fff;
-  border: 1px solid rgba(229, 229, 229, 0.9);
+  border: 1px solid #E5E5E5;
   border-radius: 16px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  padding: 20px 16px 20px;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   height: 100%;
   transition:
     box-shadow 0.25s ease,
@@ -1166,21 +1166,60 @@
 
 /* Orange "Ranked xxx" badge pinned to top-centre */
 .rank-card-badge {
-  position: absolute;
-  top: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff7ed;
-  border: 1px solid rgba(243, 111, 33, 0.35);
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  font-size: 10px;
+  background: #FFF2EA;
+  border: 1px solid #F36F2140;
+  border-radius: 33554400px;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  color: #c45000;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #F36F21;
   padding: 3px 10px 4px;
   white-space: nowrap;
   line-height: 1.4;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+
+}
+
+/* Swiper Slide Equal Heights */
+.rankings-swiper .swiper-wrapper {
+  display: flex;
+}
+
+.rankings-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+/* Card Main Container */
+.rank-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 1. Badge Row Space (Har card me badge ka height area reserved rahega) */
+.rank-card-badge {
+  display: block;
+  min-height: 28px;
+}
+
+/* Badge Pseudo-class: Agar kisi HTML block me badge textual content blank na ho, tabhi background/border dikhe */
+.rank-card-badge:empty {
+  visibility: hidden;
+}
+
+.rank-card-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  /* Image crop nahi hogi aur original proportions me rahegi */
+}
+
+/* 3. Description Area */
+.rank-card-desc {
+  margin-top: auto;
+  /* Baaki bacchi hui space auto occupy karke bottom me text align dekhega */
 }
 
 /* Logo / image area */
@@ -1190,6 +1229,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  background: #FAFAFAB2;
+  border: 1px solid #F5F5F5;
+  padding: 10px;
   min-height: 90px;
 }
 
@@ -1204,10 +1246,10 @@
 
 /* Description text */
 .rank-card-desc {
-  font-size: 12px;
-  font-weight: 600;
-  color: #1a1a2e;
-  line-height: 1.5;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 13.5px;
+  line-height: 18.56px;
   text-align: center;
   margin: 0;
 }
@@ -1245,9 +1287,6 @@
    ================================================ */
 
 @media (max-width: 1024px) {
-  .rankings-section {
-    padding-block: 64px;
-  }
 
   .rankings-heading {
     font-size: 30px;
@@ -1256,7 +1295,7 @@
 
 @media (max-width: 768px) {
   .rankings-section {
-    padding-block: 48px;
+    padding: 60px 16px;
   }
 
   .rankings-heading {
@@ -1274,9 +1313,6 @@
 }
 
 @media (max-width: 480px) {
-  .rankings-section {
-    padding-block: 40px;
-  }
 
   .rankings-heading {
     font-size: 22px;
@@ -1297,6 +1333,6 @@
   }
 
   .rank-card-desc {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
