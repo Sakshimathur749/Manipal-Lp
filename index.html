@@ -260,23 +260,45 @@
     </div>
     <div class="container container-py-96 container-60px">
       <div class="row gap-md-48 gap-34 align-items-center">
-        <div class="col-md-5 d-flex">
-          <div class="row g-3 h-100">
+        <div class="col-md-5 d-none d-md-flex">
+          <div class="row g-3 h-100 w-100">
             <div class="col-6">
-              <div class="bg-sixth about-img">
+              <div class="bg-sixth about-img h-100">
                 <img src="./images/Image (Sikkim Manipal University Campus & Placements Driveway).webp"
                   alt="University Campus Building" class="about-img-box h-100 w-100 object-fit-cover" />
               </div>
             </div>
             <div class="col-6">
-              <div class="bg-sixth about-img top-bottom">
+              <div class="bg-sixth about-img top-bottom h-100">
                 <img src="./images/Image (Sikkim Manipal University Campus Life and Learning).webp"
                   alt="Students studying together" class="about-img-box h-100 w-100 object-fit-cover" />
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-flex">
+
+        <!-- MOBILE CAROUSEL VIEW (Visible on < 768px) -->
+        <div class="col-12 d-block d-md-none">
+          <div class="swiper about-img-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-sixth about-img h-100">
+                  <img src="./images/Image (Sikkim Manipal University Campus & Placements Driveway).webp"
+                    alt="University Campus Building" class="about-img-box h-100 w-100 object-fit-cover" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-sixth about-img top-bottom h-100">
+                  <img src="./images/Image (Sikkim Manipal University Campus Life and Learning).webp"
+                    alt="Students studying together" class="about-img-box h-100 w-100 object-fit-cover" />
+                </div>
+              </div>
+            </div>
+            <!-- Pagination dots -->
+            <div class="swiper-pagination about-carousel-pagination"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 d-flex">
           <div class="h-100 d-flex flex-column gap-3 gap-md-4">
             <h2 class="about-title text-tertiary font-playfair fw-medium ls--1">ABOUT MANIPAL UNIVERSITY (MU)</h2>
             <p class="about-text text-quinary font-plus-jakarta">

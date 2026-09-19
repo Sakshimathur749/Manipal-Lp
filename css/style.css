@@ -763,6 +763,13 @@ footer,
 }
 
 @media (max-width: 768px) {
+
+  .about-img img,
+  .about-img {
+    min-height: 300px;
+    aspect-ratio: 1/1;
+  }
+
   .container-60px {
     padding: 60px 16px !important;
   }

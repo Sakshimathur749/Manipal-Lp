@@ -33,7 +33,15 @@ function filterCards(category, element) {
         }
     });
 }
-
+const aboutCarousel = new Swiper('.about-img-carousel', {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: true,
+    pagination: {
+        el: '.about-carousel-pagination',
+        clickable: true,
+    },
+});
 document.addEventListener('DOMContentLoaded', function () {
     if (document.querySelector('.rankings-swiper')) {
         new Swiper('.rankings-swiper', {

@@ -1265,7 +1265,8 @@
 }
 
 /* ── Swiper pagination dots ── */
-.rankings-swiper .swiper-pagination {
+.rankings-swiper .swiper-pagination,
+.about-img-carousel .swiper-pagination {
   bottom: 0 !important;
   display: flex;
   align-items: center;
@@ -1273,7 +1274,8 @@
   gap: 6px;
 }
 
-.rankings-swiper .swiper-pagination-bullet {
+.rankings-swiper .swiper-pagination-bullet,
+.about-img-carousel .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1286,7 +1288,8 @@
     border-radius 0.25s ease;
 }
 
-.rankings-swiper .swiper-pagination-bullet-active {
+.rankings-swiper .swiper-pagination-bullet-active,
+.about-img-carousel .swiper-pagination-bullet-active {
   background: #f36f21;
   width: 24px;
   border-radius: 4px;
