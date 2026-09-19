@@ -33,3 +33,46 @@ function filterCards(category, element) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.querySelector('.rankings-swiper')) {
+        new Swiper('.rankings-swiper', {
+            slidesPerView: 1.2,
+            spaceBetween: 16,
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            navigation: {
+                nextEl: '.rankings-btn-next',
+                prevEl: '.rankings-btn-prev',
+                disabledClass: 'swiper-button-disabled',
+            },
+            pagination: {
+                el: '.rankings-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 3.3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4.3,
+                    spaceBetween: 20,
+                },
+                1216: {
+                    slidesPerView: 4.4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    }
+});
